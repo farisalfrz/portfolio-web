@@ -57,7 +57,7 @@ export const projectsData: Project[] = [
             "My personal corner of the internet. An interactive portfolio built with modern web technologies to showcase my journey and skills.",
         imageUrls: ["/projects/portfolio.png"],
         tags: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
-        codeUrl: "#",
+        codeUrl: "https://github.com/farisalfrz/portfolio-web",
     },
     {
         id: 6,
