@@ -1,44 +1,59 @@
-# Personal Portfolio Website
+# My Interactive Personal Portfolio
 
-This is the repository for my personal portfolio website, designed to showcase my journey, skills, and projects as a web developer. The site is fully interactive and built with a modern tech stack.
+[![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/) [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/) [![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com/)
+
+A live portfolio showcasing my journey, skills, projects, and experiences as a developer. Built from scratch with a modern, interactive tech stack.
+
+**Live Demo: [farisalfarizi.my.id](https://farisalfarizi.my.id/)**
+
+---
 
 ![Screenshot of the portfolio website](./public/projects/portfolio.png) 
 
+
 ## ✨ Features
 
-- Interactive scroll-based timeline of my career journey.
-- Animated skill cards and project showcases.
-- Image carousels for projects and events I've attended.
-- Fully responsive design for mobile and desktop viewing.
+- **Fully Responsive Design:** Optimized for all devices, from mobile to desktop.
+- **Interactive Hero Section:** Featuring on-hover text effects and an autoplaying profile photo carousel.
+- **Animated Career Timeline:** A scroll-based visualization of my journey as a developer.
+- **Dynamic Image Sliders:** Showcases for Projects, Events, and Hobbies using Swiper.js with an autoplay-on-hover feature.
+- **Smooth Animations:** Built with Framer Motion for fluid transitions and interactions.
+- **Tabbed Experience Section:** A clean and interactive presentation of my work history.
+- **Image Lightbox:** For detailed viewing of certifications.
 
 ## 🚀 Tech Stack
 
 - **Framework:** Next.js
+- **Language:** TypeScript
 - **Styling:** Tailwind CSS
 - **Animation:** Framer Motion
-- **Image Sliders:** Swiper.js
-- **Language:** TypeScript
+- **Slider/Carousel:** Swiper.js
 - **Icons:** React Icons
+- **Deployment:** Vercel
+- **DNS & Performance:** Cloudflare
 
 ## 🛠️ Running Locally
 
 To run this project on your own machine, follow these steps:
 
-1.  Clone the repository:
+1.  **Clone the repository:**
     ```sh
-    git clone [https://github.com/your-username/interactive-portfolio.git](https://github.com/your-username/interactive-portfolio.git)
+    git clone [https://github.com/](https://github.com/)[YOUR_GITHUB_USERNAME]/[YOUR_REPO_NAME].git
     ```
-2.  Navigate to the project directory:
+2.  **Navigate to the project directory:**
     ```sh
-    cd interactive-portfolio
+    cd [YOUR_REPO_NAME]
     ```
-3.  Install the dependencies:
+3.  **Install dependencies:**
     ```sh
     npm install
     ```
-4.  Run the development server:
+4.  **Run the development server:**
     ```sh
     npm run dev
     ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+---
+*Crafted with ❤️ by Faris Alfarizi*
