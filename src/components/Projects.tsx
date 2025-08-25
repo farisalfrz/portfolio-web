@@ -49,7 +49,7 @@ const Projects = () => {
               variants={cardVariants}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: false, amount: 0.2 }}
+              viewport={{ once: true, amount: 0.2 }}
               whileHover={{ y: -5, scale: 1.03 }}
               transition={{ type: "spring", stiffness: 300 }}
               onMouseEnter={() => swiperRef.current?.swiper.autoplay.start()}
