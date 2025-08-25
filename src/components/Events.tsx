@@ -35,8 +35,8 @@ const Events = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: false }}
-          onMouseEnter={() => swiperRef.current?.autoplay.start()}
-          onMouseLeave={() => swiperRef.current?.autoplay.stop()}
+          onMouseEnter={() => swiperRef.current?.swiper.autoplay.start()}
+          onMouseLeave={() => swiperRef.current?.swiper.autoplay.stop()}
         >
           Tech Events I Have Attended
         </motion.h2>

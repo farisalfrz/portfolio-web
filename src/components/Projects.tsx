@@ -52,8 +52,8 @@ const Projects = () => {
               viewport={{ once: false, amount: 0.2 }}
               whileHover={{ y: -5, scale: 1.03 }}
               transition={{ type: "spring", stiffness: 300 }}
-              onMouseEnter={() => swiperRef.current?.autoplay.start()}
-              onMouseLeave={() => swiperRef.current?.autoplay.stop()}
+              onMouseEnter={() => swiperRef.current?.swiper.autoplay.start()}
+              onMouseLeave={() => swiperRef.current?.swiper.autoplay.stop()}
             >
               <div className="relative w-full h-48 overflow-hidden">
                 <Swiper
