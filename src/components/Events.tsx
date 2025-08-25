@@ -19,7 +19,6 @@ const cardVariants = {
     opacity: 1,
     transition: {
       duration: 0.6,
-      ease: "easeOut",
     },
   },
 };
@@ -39,7 +38,7 @@ const Events = () => {
         </motion.h2>
 
         <div className="max-w-4xl mx-auto flex flex-wrap justify-center gap-8">
-          {eventsData.map((event, index) => (
+          {eventsData.map((event,) => (
             <motion.div
               key={event.id}
               className="bg-slate-800 rounded-lg overflow-hidden border border-slate-700 w-full md:w-[48%]"

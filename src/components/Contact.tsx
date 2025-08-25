@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { FiLinkedin, FiInstagram, FiMail } from "react-icons/fi";
+import { FiMail } from "react-icons/fi";
 
 const Contact = () => {
   return (

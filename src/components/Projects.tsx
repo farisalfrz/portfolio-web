@@ -21,7 +21,6 @@ const cardVariants = {
     opacity: 1,
     transition: {
       duration: 0.6,
-      ease: "easeOut",
     },
   },
 };
@@ -41,7 +40,7 @@ const Projects = () => {
         </motion.h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projectsData.map((project, index) => (
+          {projectsData.map((project) => (
             <motion.div
               key={project.id}
               className="bg-slate-800 rounded-lg overflow-hidden group border-2 border-slate-700 hover:border-blue-500 transition-colors duration-300 flex flex-col"
