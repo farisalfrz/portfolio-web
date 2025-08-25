@@ -36,13 +36,13 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link to="events" smooth={true} duration={500} offset={scrollOffset} className="text-slate-300 hover:text-blue-500 transition-colors cursor-pointer">
-              Events
+            <Link to="projects" smooth={true} duration={500} offset={scrollOffset} className="text-slate-300 hover:text-blue-500 transition-colors cursor-pointer">
+              Projects
             </Link>
           </li>
           <li>
-            <Link to="projects" smooth={true} duration={500} offset={scrollOffset} className="text-slate-300 hover:text-blue-500 transition-colors cursor-pointer">
-              Projects
+            <Link to="events" smooth={true} duration={500} offset={scrollOffset} className="text-slate-300 hover:text-blue-500 transition-colors cursor-pointer">
+              Events
             </Link>
           </li>
           <li>
