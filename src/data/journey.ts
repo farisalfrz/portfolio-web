@@ -53,7 +53,7 @@ export const journeyData: JourneyItem[] = [
         year: "2025",
         title: "Project: Chatbot for Bapperida",
         description:
-            "I applied my AI skills to develop a simple chatbot for the Bandung City Bapperida to answer frequently asked questions.",
+            "I applied my skills to develop a simple chatbot for the Bandung City Bapperida to answer frequently asked questions.",
     },
     {
         id: 9,
