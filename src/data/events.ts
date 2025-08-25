@@ -24,7 +24,7 @@ export const eventsData: TechEvent[] = [
     title: "BandungDev Tech Meetup 2024",
     description:
       "A focused meetup hosted by the Bandung developer community, aimed at bridging the gap between academia and the professional IT industry. The event featured insightful discourse from some of Indonesia's most renowned figures in tech education and development, including Sandhika Galih, Eko Kurniawan Khaenedy, Erico Darmawan, and Faqihza Mukhlish. Discussions centered on translating theoretical knowledge into practical, industry-ready skills.",
-    imageUrls: ["/events/bandungdev.jpg",
+    imageUrls: ["/events/bandungdev.JPG",
                 "/events/bandungdev-speakers.jpg",
                 "/events/bandungdev-sandhikagalih.jpg",
                 "/events/bandungdev-paeko.jpg"], 
