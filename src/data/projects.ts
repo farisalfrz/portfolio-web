@@ -36,7 +36,7 @@ export const projectsData: Project[] = [
             "A simple chatbot designed to answer frequently asked questions for the Bandung City BAPPERIDA.",
         imageUrls: ["/projects/chatbot.png"],
         tags: ["React", "CSS", "HTML", "JavaScript"],
-        liveUrl: "https://chatbot-bapperida.vercel.app/",
+        liveUrl: "https://chatbot-bapperida.farisalfarizi.my.id/",
         codeUrl: "https://github.com/farisalfrz/chatbot-bapperida",
     },
     {
@@ -47,7 +47,7 @@ export const projectsData: Project[] = [
         imageUrls: ["/projects/ril-or-fek-light.png",
                     "/projects/ril-or-fek-dark.png"],
         tags: ["React", "Python", "Scikit-learn", "IndoBERT", "Machine Learning", "Transformers", "PyTorch", "FastAPI", "Tailwind CSS"],
-        liveUrl: "https://ril-or-fek-app-hef4z.ondigitalocean.app/",
+        liveUrl: "https://rof.farisalfarizi.my.id/",
         codeUrl: "https://github.com/farisalfrz/ril-or-fek-project",
     },
     {
