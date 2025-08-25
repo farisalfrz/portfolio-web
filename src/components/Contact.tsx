@@ -36,7 +36,7 @@ const Contact = () => {
         {/* Bagian Saweria */}
         <div className="mt-8">
           <p className="text-slate-300 mb-4">
-            Like what I do? Support my work via Saweria! (Indonesia Only)
+            Like what I do? Support my work via Saweria!
           </p>
           <a
             href="https://saweria.co/farisalfarizi"
