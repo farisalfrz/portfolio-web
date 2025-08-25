@@ -15,7 +15,7 @@ export const eventsData: TechEvent[] = [
     description:
       "An immersive, community-driven conference organized by Google Developer Groups (GDG). The 2023 edition offered diverse tracks covering Android, Flutter, Cloud, AI/ML, Firebase, and Web technologies. I engaged in sessions led by seasoned industry professionals, gaining hands-on insights into modern development practices and the latest updates from the Google ecosystem.",
     imageUrls: ["/events/devfest-2023.jpg",
-                "/events/fotbar-devfest-2023.jpg "], 
+                "/events/fotbar-devfest-2023.jpg"], 
     date: "Desember 2023",
     location: "Bandung, Indonesia",
   },
