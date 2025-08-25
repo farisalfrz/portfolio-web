@@ -7,6 +7,8 @@ const Navbar = () => {
   const scrollOffset = -80; 
 
   return (
+  <>
+    <div className="h-[60px] md:h-[72px]"></div>
     <header className="fixed top-0 left-0 w-full z-50 bg-[#0a192f]/80 backdrop-blur-sm">
       <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
         
@@ -14,6 +16,7 @@ const Navbar = () => {
           to="hero" 
           smooth={true} 
           duration={500} 
+          offset={scrollOffset}
           className="text-xl font-bold text-slate-100 hover:text-blue-500 transition-colors cursor-pointer"
         >
           Faris Alfarizi.
@@ -58,6 +61,7 @@ const Navbar = () => {
         </ul>
       </nav>
     </header>
+  </>
   );
 };
 

@@ -34,8 +34,9 @@ const letterVariants = {
 const Hero = () => {
   return (
     <section id="hero" className="min-h-screen flex items-center">
-      <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-        {/* Kolom Teks (Kiri) */}
+      <div className="container mx-auto px-6 md:px-6 lg:px-8 xl:px-10 2xl:px-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-10 lg:gap-20 items-center">
+          {/* Kolom Teks (Kiri) */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
@@ -43,7 +44,7 @@ const Hero = () => {
         >
           <p className="text-blue-500 mb-2 text-lg">Hello, my name is</p>
           <motion.h1
-            className="text-4xl md:text-6xl font-bold text-slate-100 mb-4 flex overflow-hidden cursor-pointer"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-slate-100 mb-4 flex overflow-hidden cursor-pointer flex-wrap"
             variants={containerVariants}
             initial="initial"
             whileHover="hover"
@@ -60,7 +61,7 @@ const Hero = () => {
               </motion.span>
             ))}
           </motion.h1>
-          <h2 className="text-3xl md:text-5xl font-bold text-slate-400 mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-slate-400 mb-6">
             I build things for the web.
           </h2>
           <p className="text-slate-400 max-w-lg leading-relaxed mb-8">
@@ -73,7 +74,7 @@ const Hero = () => {
           <div className="flex items-center space-x-6">
             <a
               href="#journey"
-              className="inline-block px-8 py-3 border border-blue-500 text-blue-500 rounded-md hover:bg-blue-500/10 transition-colors text-lg"
+              className="inline-block px-4 md:px-8 py-2 md:py-3 border border-blue-500 text-blue-500 rounded-md hover:bg-blue-500/10 transition-colors text-base md:text-lg"
             >
               Explore My Journey
             </a>
@@ -118,10 +119,9 @@ const Hero = () => {
             </div>
           </div>
         </motion.div>
-
         {/* Kolom Foto (Kanan) */}
         <motion.div
-          className="relative w-80 h-80 md:w-96 md:h-96 justify-self-center md:justify-self-end"
+          className="relative w-80 h-80 md:w-96 md:h-96 justify-self-center md:justify-self-end max-w-sm mx-auto md:max-w-none"
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
@@ -141,7 +141,7 @@ const Hero = () => {
                 <SwiperSlide key={index}>
                   <Image
                     src={photo}
-                    alt={`Foto Profil ${index + 1} [Your Name]`}
+                    alt={`Foto Profil ${index + 1} Faris Alfarizi`}
                     layout="fill"
                     objectFit="cover"
                     className="rounded-lg"
@@ -151,6 +151,7 @@ const Hero = () => {
             </Swiper>
           </div>
         </motion.div>
+        </div>
       </div>
     </section>
   );
