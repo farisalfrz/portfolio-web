@@ -1,12 +1,13 @@
 "use client";
 
-import React from 'react';
+import React, { useRef } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { eventsData } from '@/data/events';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation, Autoplay } from 'swiper/modules';
+import type { Swiper as SwiperType } from 'swiper';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -24,6 +25,7 @@ const cardVariants = {
 };
 
 const Events = () => {
+  const swiperRef = useRef<SwiperType | null>(null);
   return (
     <section id="events" className="py-24">
       <div className="container mx-auto px-6">
@@ -33,6 +35,8 @@ const Events = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: false }}
+          onMouseEnter={() => swiperRef.current?.autoplay.start()}
+          onMouseLeave={() => swiperRef.current?.autoplay.stop()}
         >
           Tech Events I Have Attended
         </motion.h2>
@@ -51,6 +55,7 @@ const Events = () => {
             >
               <div className="relative w-full h-56">
                 <Swiper
+                  ref={swiperRef}
                   modules={[Pagination, Navigation, Autoplay]}
                   loop={true}
                   pagination={{ clickable: true }}
@@ -60,8 +65,6 @@ const Events = () => {
                     disableOnInteraction: false,
                     pauseOnMouseEnter: true,
                   }}
-                  onMouseEnter={(swiper) => swiper.autoplay.start()}
-                  onMouseLeave={(swiper) => swiper.autoplay.stop()}
                   className="w-full h-full"
                 >
                   {event.imageUrls.map((url, i) => (

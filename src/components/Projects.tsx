@@ -1,12 +1,13 @@
 "use client";
 
-import React from 'react';
+import React, { useRef } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { projectsData } from '@/data/projects';
 import { FiGithub, FiExternalLink } from 'react-icons/fi';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
+import type { Swiper as SwiperType } from 'swiper';
 import { Pagination, Navigation, Autoplay } from 'swiper/modules';
 
 import 'swiper/css';
@@ -26,6 +27,7 @@ const cardVariants = {
 };
 
 const Projects = () => {
+  const swiperRef = useRef<SwiperType | null>(null);
   return (
     <section id="projects" className="py-24 bg-slate-900/50">
       <div className="container mx-auto px-6">
@@ -50,9 +52,12 @@ const Projects = () => {
               viewport={{ once: false, amount: 0.2 }}
               whileHover={{ y: -5, scale: 1.03 }}
               transition={{ type: "spring", stiffness: 300 }}
+              onMouseEnter={() => swiperRef.current?.autoplay.start()}
+              onMouseLeave={() => swiperRef.current?.autoplay.stop()}
             >
               <div className="relative w-full h-48 overflow-hidden">
                 <Swiper
+                  ref={swiperRef}
                   modules={[Pagination, Navigation, Autoplay]}
                   spaceBetween={0}
                   slidesPerView={1}
@@ -64,8 +69,6 @@ const Projects = () => {
                     disableOnInteraction: false, 
                     pauseOnMouseEnter: true, 
                   }}
-                  onMouseEnter={(swiper) => swiper.autoplay.start()}
-                  onMouseLeave={(swiper) => swiper.autoplay.stop()}
                   className="w-full h-full"
                 >
                   {project.imageUrls.map((url, i) => (
