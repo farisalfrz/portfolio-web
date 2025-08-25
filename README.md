@@ -2,7 +2,7 @@
 
 This is the repository for my personal portfolio website, designed to showcase my journey, skills, and projects as a web developer. The site is fully interactive and built with a modern tech stack.
 
-![GIF of the portfolio website](https://i.imgur.com/mosvkHI.gif) 
+![Screenshot of the portfolio website](./public/projects/portfolio.png) 
 
 ## ✨ Features
 
