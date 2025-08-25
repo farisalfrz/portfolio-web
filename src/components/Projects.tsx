@@ -7,7 +7,7 @@ import { projectsData } from '@/data/projects';
 import { FiGithub, FiExternalLink } from 'react-icons/fi';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import type { Swiper as SwiperType } from 'swiper';
+import type { SwiperRef } from 'swiper/react';
 import { Pagination, Navigation, Autoplay } from 'swiper/modules';
 
 import 'swiper/css';
@@ -27,7 +27,7 @@ const cardVariants = {
 };
 
 const Projects = () => {
-  const swiperRef = useRef<SwiperType | null>(null);
+  const swiperRef = useRef<SwiperRef | null>(null);
   return (
     <section id="projects" className="py-24 bg-slate-900/50">
       <div className="container mx-auto px-6">

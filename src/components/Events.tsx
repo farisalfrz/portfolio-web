@@ -7,7 +7,7 @@ import { eventsData } from '@/data/events';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation, Autoplay } from 'swiper/modules';
-import type { Swiper as SwiperType } from 'swiper';
+import type { SwiperRef } from 'swiper/react';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -25,7 +25,7 @@ const cardVariants = {
 };
 
 const Events = () => {
-  const swiperRef = useRef<SwiperType | null>(null);
+  const swiperRef = useRef<SwiperRef | null>(null);
   return (
     <section id="events" className="py-24">
       <div className="container mx-auto px-6">
