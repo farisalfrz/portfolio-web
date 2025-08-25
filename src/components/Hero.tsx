@@ -1,25 +1,35 @@
 "use client";
 
+import React from 'react';
+import Image from 'next/image';
+import { motion } from 'framer-motion';
+import { FiGithub, FiLinkedin, FiInstagram } from 'react-icons/fi';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/autoplay';
 
-
-import React from "react";
-import Image from "next/image";
-import { motion } from "framer-motion";
-import { FiGithub, FiLinkedin, FiInstagram } from "react-icons/fi";
-
 const profilePhotos = [
-  "/images/foto-faris1.jpg", 
-  "/images/foto-faris2.jpg", 
-  "/images/foto-faris3.jpg", 
-  "/images/foto-faris4.jpg", 
-  "/images/foto-faris5.jpg", 
-  "/images/foto-faris6.jpg", 
-  "/images/foto-faris7.jpg", 
+  "/images/foto-faris1.jpg",
+  "/images/foto-faris2.jpg",
+  "/images/foto-faris3.jpg",
+  "/images/foto-faris4.jpg",
+  "/images/foto-faris5.jpg",
+  "/images/foto-faris6.jpg",
+  "/images/foto-faris7.jpg",
 ];
+
+const myName = "Faris Alfarizi.".split(""); 
+
+const containerVariants = {
+  initial: { transition: { staggerChildren: 0.05, staggerDirection: -1 } },
+  hover: { transition: { staggerChildren: 0.05, staggerDirection: 1 } },
+};
+
+const letterVariants = {
+  initial: { y: 0, color: "#e2e8f0" }, // Warna awal (slate-200)
+  hover: { y: -10, color: "#3b82f6" }, // Naik 10px dan ganti warna (blue-500)
+};
 
 const Hero = () => {
   return (
@@ -32,9 +42,24 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
         >
           <p className="text-blue-500 mb-2 text-lg">Hello, my name is</p>
-          <h1 className="text-4xl md:text-6xl font-bold text-slate-100 mb-4">
-            Faris Alfarizi.
-          </h1>
+          <motion.h1
+            className="text-4xl md:text-6xl font-bold text-slate-100 mb-4 flex overflow-hidden cursor-pointer"
+            variants={containerVariants}
+            initial="initial"
+            whileHover="hover"
+            aria-label="Faris Alfarizi." 
+          >
+            {myName.map((letter, index) => (
+              <motion.span
+                key={index}
+                variants={letterVariants}
+                transition={{ type: 'spring', stiffness: 300, damping: 15 }}
+                className="inline-block"
+              >
+                {letter === " " ? "\u00A0" : letter}
+              </motion.span>
+            ))}
+          </motion.h1>
           <h2 className="text-3xl md:text-5xl font-bold text-slate-400 mb-6">
             I build things for the web.
           </h2>
@@ -84,7 +109,7 @@ const Hero = () => {
                 className="relative w-6 h-6 hover:opacity-80 transition-opacity"
               >
                 <Image
-                  src="/images/saweria.png" 
+                  src="/images/saweria.png"
                   alt="Saweria"
                   layout="fill"
                   objectFit="contain"

@@ -13,6 +13,7 @@ const Navbar = () => {
           <li><a href="#experience" className="text-slate-300 hover:text-blue-500 transition-colors">Experiences</a></li>
           <li><a href="#projects" className="text-slate-300 hover:text-blue-500 transition-colors">Projects</a></li>
           <li><a href="#events" className="text-slate-300 hover:text-blue-500 transition-colors">Events</a></li>
+          <li><a href="#hobbies" className="text-slate-300 hover:text-blue-500 transition-colors">Hobbies</a></li>
           <li><a href="#contact" className="px-4 py-2 border border-blue-500 text-blue-500 rounded-md hover:bg-blue-500/10 transition-colors">
               Contact
             </a>

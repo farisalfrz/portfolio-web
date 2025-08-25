@@ -31,22 +31,6 @@ const Contact = () => {
             <FiMail className="mr-3" size={22} />
             <span>faris.alfarizi109@gmail.com</span>
           </a>
-          <a
-            href="https://www.instagram.com/farisalfarizi__/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center text-lg text-slate-300 hover:text-blue-500 transition-colors duration-300 font-mono"
-          >
-            <FiInstagram className="mr-3" size={22} />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/faris-alfarizi/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center text-lg text-slate-300 hover:text-blue-500 transition-colors duration-300 font-mono"
-          >
-            <FiLinkedin className="mr-3" size={22} />
-          </a>
         </div>
 
         {/* Bagian Saweria */}
