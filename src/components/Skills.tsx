@@ -55,7 +55,8 @@ const Skills = () => {
           {skillCategories.map((category) => (
             <motion.div 
               key={category.title} 
-              className="bg-slate-800 p-6 rounded-lg border border-slate-700 w-full sm:w-5/12 md:w-1/3 lg:w-[30%]"
+              className="bg-slate-800 p-6 rounded-lg border border-slate-700 w-full sm:w-5/12 md:w-1/3 lg:w-[30%]
+              transition-shadow duration-300 hover:shadow-lg hover:shadow-blue-500/20"
               variants={itemVariants}
               whileHover={{ y: -5, scale: 1.05 }}
               transition={{ type: "spring", stiffness: 300 }}
@@ -88,7 +89,8 @@ const Skills = () => {
               {certifications.map((cert, index) => (
                 <motion.li 
                   key={index} 
-                  className="bg-slate-800 p-4 rounded-lg border border-slate-700 w-full md:w-[45%] lg:w-[40%]"
+                  className="bg-slate-800 p-4 rounded-lg border border-slate-700 w-full md:w-[45%] lg:w-[40%]
+                  transition-shadow duration-300 hover:shadow-lg hover:shadow-blue-500/20"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   whileHover={{ y: -5, scale: 1.03 }}

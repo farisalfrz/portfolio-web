@@ -65,15 +65,16 @@ const Hobbies = () => {
           {hobbiesData.map((hobby, index) => (
             <motion.div
               key={index}
-              className="bg-slate-800 rounded-lg overflow-hidden border border-slate-700 w-full sm:w-[45%] md:w-[40%] lg:w-[22%] cursor-pointer"
+              className="bg-slate-800 rounded-lg overflow-hidden border border-slate-700 w-full sm:w-[45%] md:w-[40%] lg:w-[22%] cursor-pointer
+              transition-shadow duration-300 hover:shadow-lg hover:shadow-blue-500/20"
               variants={{
                 hidden: { opacity: 0, y: 20 },
                 visible: { opacity: 1, y: 0 },
               }}
               initial="hidden"
               whileInView="visible"
-              transition={{ delay: index * 0.2, duration: 0.3 }} 
-              whileHover={{ scale: 1.03, boxShadow: "0px 5px 15px rgba(0, 0, 0, 0.3)", transition: { duration: 0.1, ease: "easeOut" } }} 
+              transition={{ delay: index * 0.1, duration: 0.3 }} 
+              whileHover={{ scale: 1.03, boxShadow: "0px 5px 15px rgba(59, 130, 246, 0.2)", transition: { duration: 0.1, ease: "easeOut" } }} 
               style={{ boxShadow: "0px 0px 0px rgba(0, 0, 0, 0)" }} 
             >
               <h3 className="text-xl font-semibold text-slate-300 p-4 border-b border-slate-700 text-center">

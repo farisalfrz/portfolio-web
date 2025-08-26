@@ -45,7 +45,8 @@ const Projects = () => {
           {projectsData.map((project) => (
             <motion.div
               key={project.id}
-              className="bg-slate-800 rounded-lg overflow-hidden group border-2 border-slate-700 hover:border-blue-500 transition-colors duration-300 flex flex-col"
+              className="bg-slate-800 rounded-lg overflow-hidden group border-2 border-slate-700 hover:border-blue-500 transition-colors duration-300 flex flex-col
+              transition-shadow duration-300 hover:shadow-lg hover:shadow-blue-500/20"
               variants={cardVariants}
               initial="hidden"
               whileInView="visible"

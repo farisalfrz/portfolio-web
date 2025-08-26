@@ -45,7 +45,8 @@ const Events = () => {
           {eventsData.map((event,) => (
             <motion.div
               key={event.id}
-              className="bg-slate-800 rounded-lg overflow-hidden border border-slate-700 w-full md:w-[48%]"
+              className="bg-slate-800 rounded-lg overflow-hidden border border-slate-700 w-full md:w-[48%]
+              transition-shadow duration-300 hover:shadow-lg hover:shadow-blue-500/20"
               variants={cardVariants}
               initial="hidden"
               whileInView="visible"

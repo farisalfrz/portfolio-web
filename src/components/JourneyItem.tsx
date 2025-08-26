@@ -29,7 +29,9 @@ const JourneyItem = ({ year, title, description, index }: JourneyItemProps) => {
         <div className="w-8 h-1 bg-slate-600"></div>
       </div>
       <motion.div
-      className={`bg-slate-800 border-2 border-slate-700 rounded-lg shadow-xl w-full md:w-5/12 px-6 py-4 ${isOdd ? "md:ml-auto" : "md:mr-auto"
+      className={`bg-slate-800 border-2 border-slate-700 rounded-lg shadow-xl w-full md:w-5/12 px-6 py-4 
+        transition-shadow duration-300 hover:shadow-lg hover:shadow-blue-500/20
+        ${isOdd ? "md:ml-auto" : "md:mr-auto"
       }`}
       whileHover={{ y: -5, scale: 1.03 }}
       transition={{ type: "spring", stiffness: 300 }}

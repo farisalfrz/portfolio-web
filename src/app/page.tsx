@@ -11,7 +11,7 @@ import Footer from "@/components/Footer";
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Faris Alfarizi | Web Developer Portfolio',
+  title: 'Faris Alfarizi | Portfolio',
   description: 'Personal portfolio of Faris Alfarizi, a full-stack developer specializing in Next.js, AI, and modern web technologies.',
   icons: {
     icon: '/favicon.png',
