@@ -1,8 +1,8 @@
 "use client";
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
+import { motion, useAnimationControls } from 'framer-motion';
 import { FiGithub, FiLinkedin, FiInstagram } from 'react-icons/fi';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
@@ -32,6 +32,22 @@ const letterVariants = {
 };
 
 const Hero = () => {
+  const controls = useAnimationControls();
+
+  useEffect(() => {
+    // Fungsi untuk menjalankan urutan animasi
+    const sequence = async () => {
+      // Tunggu 1 detik setelah halaman dimuat agar tidak terlalu cepat
+      await new Promise(resolve => setTimeout(resolve, 1000));
+      // Mainkan animasi 'hover' (huruf naik)
+      await controls.start("hover");
+      // Setelah selesai, kembalikan ke animasi 'initial' (huruf turun)
+      await controls.start("initial");
+    };
+
+    sequence();
+  }, [controls]);
+
   return (
     <section id="hero" className="min-h-screen flex items-center">
       <div className="container mx-auto px-6 md:px-6 lg:px-8 xl:px-10 2xl:px-12">
@@ -46,6 +62,7 @@ const Hero = () => {
           <motion.h1
             className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-slate-100 mb-4 flex overflow-hidden cursor-pointer flex-wrap"
             variants={containerVariants}
+            animate={controls}
             initial="initial"
             whileHover="hover"
             aria-label="Faris Alfarizi." 
