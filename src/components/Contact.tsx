@@ -56,6 +56,7 @@ const Contact = () => {
           </a>
         </div>
       </motion.div>
+      
     </section>
   );
 };
