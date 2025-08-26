@@ -49,7 +49,7 @@ const Hero = () => {
   }, [controls]);
 
   return (
-    <section id="hero" className="min-h-screen flex items-center pt-6 md:pt-0">
+    <section id="hero" className="min-h-screen flex items-center pt-6 md:pt-0 overflow-hidden">
       <div className="container mx-auto px-6 md:px-6 lg:px-8 xl:px-10 2xl:px-12">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-10 lg:gap-20 items-center">
           {/* Kolom Teks (Kiri) */}

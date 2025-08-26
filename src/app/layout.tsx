@@ -20,6 +20,7 @@ export default function RootLayout({
       <body className={poppins.className}>
         {useIsDesktop() && <CustomCursor />}
         <div className="aurora-background"></div>
+        <div className="dot-pattern"></div>
         {children}
       </body>
     </html>
