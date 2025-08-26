@@ -5,11 +5,17 @@ body {
   color: rgb(203 213 225);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  cursor: none;
 }
 
-a, button, [role="button"], input, textarea {
-  cursor: none;
+@media (pointer: fine) {
+  body,
+  a,
+  button,
+  [role="button"],
+  input,
+  textarea {
+    cursor: none;
+  }
 }
 
 html {
