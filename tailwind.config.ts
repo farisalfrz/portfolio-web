@@ -1,6 +1,6 @@
 import type { Config } from 'tailwindcss'
 
-export default {
+const config: Config = {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -8,6 +8,10 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['var(--font-poppins)', 'sans-serif'],
+      },
+
       keyframes: {
         'gradient-shine': {
           '0%': { backgroundPosition: '0% 50%' },
@@ -17,6 +21,7 @@ export default {
       animation: {
         'gradient-shine': 'gradient-shine 1s linear',
       },
+
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
@@ -25,4 +30,5 @@ export default {
     },
   },
   plugins: [],
-} satisfies Config
+}
+export default config
