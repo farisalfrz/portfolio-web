@@ -38,11 +38,11 @@ To run this project on your own machine, follow these steps:
 
 1.  **Clone the repository:**
     ```sh
-    git clone [https://github.com/](https://github.com/)[YOUR_GITHUB_USERNAME]/[YOUR_REPO_NAME].git
+    git clone [https://github.com/](https://github.com/)farisalfrz/portfolio-web.git
     ```
 2.  **Navigate to the project directory:**
     ```sh
-    cd [YOUR_REPO_NAME]
+    cd portfolio-web
     ```
 3.  **Install dependencies:**
     ```sh
