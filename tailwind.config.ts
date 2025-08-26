@@ -8,10 +8,6 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        sans: ['var(--font-poppins)', 'sans-serif'],
-      },
-
       keyframes: {
         'gradient-shine': {
           '0%': { backgroundPosition: '0% 50%' },

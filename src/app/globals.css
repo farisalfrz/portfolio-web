@@ -1,5 +1,22 @@
 @import "tailwindcss";
 
+body {
+  background-color: #0a192f;
+  color: rgb(203 213 225);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  cursor: none;
+}
+
+a, button, [role="button"], input, textarea {
+  cursor: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
 .aurora-background {
   position: fixed;
   top: 50%;
@@ -24,20 +41,4 @@
   100% {
     transform: translate(-50%, -50%) rotate(360deg) scale(1);
   }
-}
-
-body {
-  cursor: none;
-}
-
-a, button, [role="button"], input, textarea {
-  cursor: none;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  @apply bg-[#0a192f] text-slate-300 antialiased;
 }
