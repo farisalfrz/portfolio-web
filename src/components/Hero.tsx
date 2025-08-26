@@ -58,9 +58,9 @@ const Hero = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <p className="text-blue-500 mb-2 text-lg">Hello, my name is</p>
+          <p className="text-blue-500 text-lg mb-2">Hello, my name is</p>
           <motion.h1
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-slate-100 mb-4 flex overflow-hidden cursor-pointer flex-wrap"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-slate-100 mb-4 py-2 cursor-pointer flex-wrap"
             variants={containerVariants}
             animate={controls}
             initial="initial"
