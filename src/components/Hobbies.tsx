@@ -73,9 +73,8 @@ const Hobbies = () => {
               }}
               initial="hidden"
               whileInView="visible"
-              transition={{ delay: index * 0.1, duration: 0.3 }} 
-              whileHover={{ scale: 1.03, boxShadow: "0px 5px 15px rgba(59, 130, 246, 0.2)", transition: { duration: 0.1, ease: "easeOut" } }} 
-              style={{ boxShadow: "0px 0px 0px rgba(0, 0, 0, 0)" }} 
+              whileHover={{ y: -5, scale: 1.03 }}
+              transition={{ type: "spring", stiffness: 300 }}  
             >
               <h3 className="text-xl font-semibold text-slate-300 p-4 border-b border-slate-700 text-center">
                 {hobby.name}
