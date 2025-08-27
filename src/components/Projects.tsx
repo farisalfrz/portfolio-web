@@ -29,10 +29,10 @@ const cardVariants = {
 const Projects = () => {
   const swiperRef = useRef<SwiperRef | null>(null);
   return (
-    <section id="projects" className="py-24 bg-slate-900/50">
+    <section id="projects" className="py-16 md:py-24 bg-slate-900/50">
       <div className="container mx-auto px-6">
         <motion.h2
-          className="text-3xl md:text-4xl font-bold text-center text-slate-100 mb-16"
+          className="text-2xl md:text-4xl font-bold text-center text-slate-100 mb-16"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -41,7 +41,7 @@ const Projects = () => {
           I Have Built
         </motion.h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
           {projectsData.map((project) => (
             <motion.div
               key={project.id}
@@ -56,7 +56,7 @@ const Projects = () => {
               onMouseEnter={() => swiperRef.current?.swiper.autoplay.start()}
               onMouseLeave={() => swiperRef.current?.swiper.autoplay.stop()}
             >
-              <div className="relative w-full h-48 overflow-hidden">
+              <div className="relative w-full h-40 md:h-48 overflow-hidden">
                 <Swiper
                   ref={swiperRef}
                   modules={[Pagination, Navigation, Autoplay]}
@@ -85,8 +85,8 @@ const Projects = () => {
                   ))}
                 </Swiper>
               </div>
-              <div className="p-6 flex flex-col flex-grow">
-                <h3 className="text-xl font-bold text-slate-100 mb-2">
+              <div className="p-4 md:p-6 flex flex-col flex-grow">
+                <h3 className="text-lg md:text-xl font-bold text-slate-100 mb-2">
                   {project.title}
                 </h3>
                 <p className="text-slate-400 mb-4 text-sm leading-relaxed">

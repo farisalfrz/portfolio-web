@@ -29,7 +29,7 @@ const JourneyItem = ({ year, title, description, index }: JourneyItemProps) => {
         <div className="w-8 h-1 bg-slate-600"></div>
       </div>
       <motion.div
-      className={`bg-slate-800 border-2 border-slate-700 rounded-lg shadow-xl w-full md:w-5/12 px-6 py-4 
+        className={`bg-slate-800 border-2 border-slate-700 rounded-lg shadow-xl w-full px-4 md:px-6 py-3 md:py-4 
         transition-shadow duration-300 hover:shadow-lg hover:shadow-blue-500/20
         ${isOdd ? "md:ml-auto" : "md:mr-auto"
       }`}
@@ -37,8 +37,8 @@ const JourneyItem = ({ year, title, description, index }: JourneyItemProps) => {
       transition={{ type: "spring", stiffness: 300 }}
       >
         <p className="text-blue-500 mb-1 font-semibold">{year}</p>
-        <h3 className="font-bold text-lg text-slate-100">{title}</h3>
-        <p className="mt-2 text-slate-300 leading-relaxed">{description}</p>
+        <h3 className="font-bold text-base md:text-lg">{title}</h3>
+        <p className="mt-2 text-sm md:text-base text-slate-300">{description}</p>
       </motion.div>
     </motion.div>
   );

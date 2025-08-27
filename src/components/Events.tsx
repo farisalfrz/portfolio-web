@@ -27,10 +27,10 @@ const cardVariants = {
 const Events = () => {
   const swiperRef = useRef<SwiperRef | null>(null);
   return (
-    <section id="events" className="py-24">
+    <section id="events" className="py-16 md:py-24">
       <div className="container mx-auto px-6">
         <motion.h2
-          className="text-3xl md:text-4xl font-bold text-center text-slate-100 mb-16"
+          className="text-2xl md:text-3xl md:text-4xl font-bold text-center text-slate-100 mb-16"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -41,7 +41,7 @@ const Events = () => {
           Tech Events I Have Attended
         </motion.h2>
 
-        <div className="max-w-4xl mx-auto flex flex-wrap justify-center gap-8">
+        <div className="max-w-4xl mx-auto flex flex-wrap justify-center gap-4 md:gap-8">
           {eventsData.map((event,) => (
             <motion.div
               key={event.id}
@@ -54,7 +54,7 @@ const Events = () => {
               whileHover={{ y: -5, scale: 1.03 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
-              <div className="relative w-full h-56">
+              <div className="relative w-full h-48 md:h-56">
                 <Swiper
                   ref={swiperRef}
                   modules={[Pagination, Navigation, Autoplay]}
@@ -80,11 +80,11 @@ const Events = () => {
                   ))}
                 </Swiper>
               </div>
-              <div className="p-6 flex-grow">
+              <div className="p-4 md:p-6 flex-grow">
                 <p className="text-sm text-blue-400 font-semibold mb-1">
                   {event.date} • {event.location}
                 </p>
-                <h3 className="text-xl font-bold text-slate-100 mb-2">
+                <h3 className="text-lg md:text-xl font-bold text-slate-100 mb-2">
                   {event.title}
                 </h3>
                 <p className="text-slate-400 text-sm leading-relaxed">

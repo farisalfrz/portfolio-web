@@ -33,10 +33,10 @@ const Skills = () => {
 
   return (
     <>
-      <section id="skills" className="py-24 bg-slate-900/50">
+      <section id="skills" className="py-16 md:py-24 bg-slate-900/50">
         <div className="container mx-auto px-6">
           <motion.h2 
-          className="text-3xl md:text-4xl font-bold text-center text-slate-100 mb-16"
+          className="text-2xl md:text-4xl font-bold text-center text-slate-100 mb-16"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -55,18 +55,18 @@ const Skills = () => {
           {skillCategories.map((category) => (
             <motion.div 
               key={category.title} 
-              className="bg-slate-800 p-6 rounded-lg border border-slate-700 w-full sm:w-5/12 md:w-1/3 lg:w-[30%]
+              className="bg-slate-800 p-6 md:p-6 rounded-lg border border-slate-700 w-full sm:w-5/12 md:w-1/3 lg:w-[30%]
               transition-shadow duration-300 hover:shadow-lg hover:shadow-blue-500/20"
               variants={itemVariants}
               whileHover={{ y: -5, scale: 1.05 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
-              <h3 className="text-xl font-bold text-slate-100 mb-4">{category.title}</h3>
+              <h3 className="text-lg md:text-xl font-bold text-slate-100 mb-4">{category.title}</h3>
               <ul className="space-y-3">
                 {category.skills.map((skill) => (
                   <li key={skill.name} className="flex items-center">
                     <skill.icon className="text-blue-500 mr-3 text-xl" />
-                    <span className="text-slate-300">{skill.name}</span>
+                    <span className="text-sm md:text-base">{skill.name}</span>
                   </li>
                 ))}
               </ul>

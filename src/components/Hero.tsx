@@ -27,40 +27,39 @@ const containerVariants = {
 };
 
 const letterVariants = {
-  initial: { y: 0, color: "#e2e8f0" }, // Warna awal (slate-200)
-  hover: { y: -10, color: "#3b82f6" }, // Naik 10px dan ganti warna (blue-500)
+  initial: { y: 0, color: "#e2e8f0" },
+  hover: { y: -10, color: "#3b82f6" },
 };
 
 const Hero = () => {
   const controls = useAnimationControls();
 
   useEffect(() => {
-    // Fungsi untuk menjalankan urutan animasi
     const sequence = async () => {
-      // Tunggu 1 detik setelah halaman dimuat agar tidak terlalu cepat
       await new Promise(resolve => setTimeout(resolve, 1000));
-      // Mainkan animasi 'hover' (huruf naik)
       await controls.start("hover");
-      // Setelah selesai, kembalikan ke animasi 'initial' (huruf turun)
       await controls.start("initial");
     };
-
     sequence();
   }, [controls]);
 
   return (
-    <section id="hero" className="min-h-screen flex items-center pt-6 md:pt-0 overflow-hidden">
-      <div className="container mx-auto px-6 md:px-6 lg:px-8 xl:px-10 2xl:px-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-10 lg:gap-20 items-center">
-          {/* Kolom Teks (Kiri) */}
+    <section id="hero" className="min-h-screen flex items-center pt-15 md:pt-0">
+      
+      {/* Kontainer utama */}
+      <div className="container mx-auto px-6 flex flex-col md:flex-row items-center gap-10 text-center md:text-left">
+        
+        {/* Kolom Teks (Kiri di desktop, Bawah di mobile) */}
         <motion.div
+          className="w-full order-2 md:order-1"
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <p className="text-blue-500 text-lg mb-2">Hello, my name is</p>
+          <p className="text-blue-500 text-lg mb-4">Hi, my name is</p>
+          
           <motion.h1
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-slate-100 mb-4 py-2 cursor-pointer flex-wrap"
+            className="text-4xl sm:text-5xl md:text-6xl font-bold text-slate-100 mb-4 py-2 flex flex-wrap justify-center md:justify-start cursor-pointer"
             variants={containerVariants}
             animate={controls}
             initial="initial"
@@ -78,20 +77,21 @@ const Hero = () => {
               </motion.span>
             ))}
           </motion.h1>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-slate-400 mb-6">
-            I build things for the web.
+          
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-400 mb-6">
+            I bring ideas to life with modern technology.
           </h2>
-          <p className="text-slate-400 max-w-lg leading-relaxed mb-8">
+          <p className="text-slate-400 max-w-lg mx-auto md:mx-0 leading-relaxed mb-8">
             I am an Informatics Engineering student with a deep passion for
             technology. My focus is on Full-Stack Development, where I enjoy
             bringing ideas to life, from elegant user interfaces to robust
             server-side logic. I am also deeply fascinated by the potential of
             AI and Data Science to solve complex problems.
           </p>
-          <div className="flex items-center space-x-6">
+          <div className="flex items-center space-x-6 justify-center md:justify-start">
             <a
               href="#journey"
-              className="inline-block px-4 md:px-8 py-2 md:py-3 border border-blue-500 text-blue-500 rounded-md hover:bg-blue-500/10 transition-colors text-base md:text-lg"
+              className="inline-block px-3 md:px-8 py-1.5 md:py-3 border border-blue-500 text-blue-500 rounded-md hover:bg-blue-500/10 transition-colors text-sm md:text-lg"
             >
               Explore My Journey
             </a>
@@ -136,22 +136,20 @@ const Hero = () => {
             </div>
           </div>
         </motion.div>
-        {/* Kolom Foto (Kanan) */}
+
+        {/* Kolom Foto (Kanan di desktop, Atas di mobile) */}
         <motion.div
-          className="relative w-80 h-80 md:w-96 md:h-96 justify-self-center md:justify-self-end max-w-sm mx-auto md:max-w-none"
-          initial={{ opacity: 0, x: 50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
+          className="relative w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96 mx-auto md:mx-0 order-1 md:order-2"
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
         >
           <div className="absolute inset-0 border-2 border-blue-500 rounded-lg transform rotate-3"></div>
           <div className="relative w-full h-full rounded-lg overflow-hidden">
             <Swiper
               modules={[Autoplay]}
               loop={true}
-              autoplay={{
-                delay: 2500,
-                disableOnInteraction: false,
-              }}
+              autoplay={{ delay: 2500, disableOnInteraction: false }}
               className="w-full h-full rounded-lg"
             >
               {profilePhotos.map((photo, index) => (
@@ -168,7 +166,6 @@ const Hero = () => {
             </Swiper>
           </div>
         </motion.div>
-        </div>
       </div>
     </section>
   );
