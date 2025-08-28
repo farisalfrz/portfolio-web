@@ -1,0 +1,6 @@
+# Allow all crawlers to access all parts of the site
+User-agent: *
+Allow: /
+
+# Point crawlers to the sitemap
+Sitemap: https://farisalfarizi.my.id/sitemap.xml
