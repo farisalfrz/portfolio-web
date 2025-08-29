@@ -1,13 +1,13 @@
 "use client";
 
-import React, { useEffect } from 'react';
-import Image from 'next/image';
-import { motion, useAnimationControls } from 'framer-motion';
-import { FiGithub, FiLinkedin, FiInstagram } from 'react-icons/fi';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/autoplay';
+import React, { useEffect } from "react";
+import Image from "next/image";
+import { motion, useAnimationControls } from "framer-motion";
+import { FiGithub, FiLinkedin, FiInstagram } from "react-icons/fi";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/autoplay";
 
 const profilePhotos = [
   "/images/foto-faris1.jpg",
@@ -19,7 +19,7 @@ const profilePhotos = [
   "/images/foto-faris7.jpg",
 ];
 
-const myName = "Faris Alfarizi.".split(""); 
+const myName = "Faris Alfarizi.".split("");
 
 const containerVariants = {
   initial: { transition: { staggerChildren: 0.05, staggerDirection: -1 } },
@@ -36,7 +36,7 @@ const Hero = () => {
 
   useEffect(() => {
     const sequence = async () => {
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      await new Promise((resolve) => setTimeout(resolve, 1000));
       await controls.start("hover");
       await controls.start("initial");
     };
@@ -45,10 +45,8 @@ const Hero = () => {
 
   return (
     <section id="hero" className="min-h-screen flex items-center pt-15 md:pt-0">
-      
       {/* Kontainer utama */}
       <div className="container mx-auto px-6 flex flex-col md:flex-row items-center gap-10 text-center md:text-left">
-        
         {/* Kolom Teks (Kiri di desktop, Bawah di mobile) */}
         <motion.div
           className="w-full order-2 md:order-1"
@@ -57,27 +55,27 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
         >
           <p className="text-blue-500 text-lg mb-4">Hi, my name is</p>
-          
+
           <motion.h1
             className="text-4xl sm:text-5xl md:text-6xl font-bold text-slate-100 mb-4 py-2 flex flex-wrap justify-center md:justify-start cursor-pointer"
             variants={containerVariants}
             animate={controls}
             initial="initial"
             whileHover="hover"
-            aria-label="Faris Alfarizi." 
+            aria-label="Faris Alfarizi."
           >
             {myName.map((letter, index) => (
               <motion.span
                 key={index}
                 variants={letterVariants}
-                transition={{ type: 'spring', stiffness: 300, damping: 15 }}
+                transition={{ type: "spring", stiffness: 300, damping: 15 }}
                 className="inline-block"
               >
                 {letter === " " ? "\u00A0" : letter}
               </motion.span>
             ))}
           </motion.h1>
-          
+
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-400 mb-6">
             I bring ideas to life with modern technology.
           </h2>
@@ -94,6 +92,14 @@ const Hero = () => {
               className="inline-block px-3 md:px-8 py-1.5 md:py-3 border border-blue-500 text-blue-500 rounded-md hover:bg-blue-500/10 transition-colors text-sm md:text-lg"
             >
               Explore My Journey
+            </a>
+            <a
+              href="/Faris-Alfarizi-CV.pdf" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-3 md:px-8 py-1.5 md:py-3 border border-slate-500 text-slate-300 rounded-md hover:bg-slate-700/50 transition-colors text-sm md:text-lg"
+            >
+              Download CV
             </a>
             <div className="flex items-center space-x-4">
               <a
