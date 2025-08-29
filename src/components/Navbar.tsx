@@ -101,7 +101,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="/Faris-Alfarizi-CV.pdf" 
+                href="/Faris-Alfarizi-ATS-CV.pdf" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-4 py-2 border border-blue-500 text-blue-500 rounded-md hover:bg-blue-500/10 transition-colors"

@@ -94,7 +94,7 @@ const Hero = () => {
               Explore My Journey
             </a>
             <a
-              href="/Faris-Alfarizi-CV.pdf" 
+              href="/Faris-Alfarizi-ATS-CV.pdf" 
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block px-3 md:px-8 py-1.5 md:py-3 border border-slate-500 text-slate-300 rounded-md hover:bg-slate-700/50 transition-colors text-sm md:text-lg"
