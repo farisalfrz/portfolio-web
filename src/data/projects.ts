@@ -65,8 +65,11 @@ export const projectsData: Project[] = [
         title: "Subsavvy: AI Subscription Manager",
         description:
             "An AI-powered subscription management app that helps users track, manage, and optimize their subscriptions effortlessly.",
-        imageUrls: ["/projects/subsavvy.png"],
+        imageUrls: ["/projects/subsavvy.png",
+                    "/projects/subsavvy-2.png"],
         tags: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "IBM Granite", "AI"],
+        liveUrl: "https://subsavvy.farisalfarizi.my.id/",
+        codeUrl: "https://github.com/farisalfrz/subscription-tracker-capstone",
     },
     {
         id: 7,
