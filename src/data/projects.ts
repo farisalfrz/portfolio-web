@@ -62,6 +62,14 @@ export const projectsData: Project[] = [
     },
     {
         id: 6,
+        title: "Subsavvy: AI Subscription Manager",
+        description:
+            "An AI-powered subscription management app that helps users track, manage, and optimize their subscriptions effortlessly.",
+        imageUrls: ["/projects/subsavvy.png"],
+        tags: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "IBM Granite", "AI"],
+    },
+    {
+        id: 7,
         title: "Coming Soon...",
         description:
             "I'm currently brewing something new and exciting. Stay tuned for updates on my next project!",
