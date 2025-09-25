@@ -94,4 +94,10 @@ export const certifications: Certification[] = [
         link: "https://www.dicoding.com/certificates/JMZV49VNOXN9",
         imageUrl: "/certificates/dicoding-backend.png"
     },
+    {
+        name: "Code Generation and Optimization Using IBM Granite",
+        issuer: "IBM SkillsBuild",
+        link: "https://www.credly.com/earner/earned/badge/bcfd52f6-ae78-461e-8214-32789fb097d6",
+        imageUrl: "/certificates/ibm.jpg"
+    },
 ]
