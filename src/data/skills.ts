@@ -84,13 +84,13 @@ export const certifications: Certification[] = [
     },
     {
         name: "Belajar Dasar Pemrograman JavaScript",
-        issuer: "Dicoding",
+        issuer: "Dicoding Academy",
         link: "https://www.dicoding.com/certificates/2VX342OGQZYQ",
         imageUrl: "/certificates/dicoding-javascript.jpg"
     },
     {
         name: "Belajar Back-End Pemula dengan JavaScript",
-        issuer: "Dicoding",
+        issuer: "Dicoding Academy",
         link: "https://www.dicoding.com/certificates/JMZV49VNOXN9",
         imageUrl: "/certificates/dicoding-backend.png"
     },
@@ -99,5 +99,29 @@ export const certifications: Certification[] = [
         issuer: "IBM SkillsBuild",
         link: "https://www.credly.com/earner/earned/badge/bcfd52f6-ae78-461e-8214-32789fb097d6",
         imageUrl: "/certificates/ibm.jpg"
+    },
+    {
+        name: "Belajar Dasar AI",
+        issuer: "Dicoding Academy",
+        link: "https://www.dicoding.com/certificates/EYX4KY2Y5PDL",
+        imageUrl: "/certificates/dicoding-ai.png"
+    },
+    {
+        name: "Belajar Dasar Data Science",
+        issuer: "Dicoding Academy",
+        link: "https://www.dicoding.com/certificates/KEXL28V9WZG2",
+        imageUrl: "/certificates/dicoding-datascience.jpg"
+    },
+    {
+        name: "Belajar Dasar Structured Query Language (SQL)",
+        issuer: "Dicoding Academy",
+        link: "https://www.dicoding.com/certificates/4EXG33QQDZRL",
+        imageUrl: "/certificates/dicoding-sql.jpg"
+    },
+    {
+        name: "Memulai Pemrograman dengan Python",
+        issuer: "Dicoding Academy",
+        link: "https://www.dicoding.com/certificates/ERZR27W3QPYV",
+        imageUrl: "/certificates/dicoding-python.jpg"
     },
 ]

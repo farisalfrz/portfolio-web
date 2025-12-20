@@ -106,7 +106,7 @@ const Navbar = () => {
                 rel="noopener noreferrer"
                 className="px-4 py-2 border border-blue-500 text-blue-500 rounded-md hover:bg-blue-500/10 transition-colors"
               >
-                Resume
+                CV
               </a>
             </li>
           </ul>
