@@ -62,4 +62,11 @@ export const journeyData: JourneyItem[] = [
         description:
             "The culmination of my skills: a full-stack app leveraging data science and ML to detect misinformation, combining frontend, backend, and AI.",
     },
+    {
+        id: 10,
+        year: "2026",
+        title: "Research Internship in Japan: JAIST",
+        description:
+            "I expanded my AI research internationally through a two-month research internship at the Japan Advanced Institute of Science and Technology (JAIST) in Ishikawa, Japan, working on the ChemAutoVision project combining computer vision and chemoinformatics.",
+    },
 ];
