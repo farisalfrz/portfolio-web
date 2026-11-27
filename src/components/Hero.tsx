@@ -77,14 +77,10 @@ const Hero = () => {
           </motion.h1>
 
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-400 mb-6">
-            I bring ideas to life with modern technology.
+            I build intelligent web solutions driven by data and AI.
           </h2>
           <p className="text-slate-400 max-w-lg mx-auto md:mx-0 leading-relaxed mb-8">
-            I am an Informatics Engineering student with a deep passion for
-            technology. My focus is on Full-Stack Development, where I enjoy
-            bringing ideas to life, from elegant user interfaces to robust
-            server-side logic. I am also deeply fascinated by the potential of
-            AI and Data Science to solve complex problems.
+            I am an Informatics Engineering fresh graduate with a strong focus on Data Science and Web Development. I enjoy turning complex data into actionable insights and AI-powered models, while building responsive, end-to-end web applications from clean user interfaces to scalable backend systems.
           </p>
           <div className="flex items-center space-x-6 justify-center md:justify-start">
             <a
